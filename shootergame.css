@@ -1,0 +1,61 @@
+ body {
+     margin: 0;
+     padding: 0;
+
+
+     color: rgb(255, 255, 255);
+ }
+
+ .container-md {
+     width: 800px;
+     margin: auto;
+     height: 900px;
+     text-align: center;
+
+
+ }
+
+ .title {
+     font-size: xx-large;
+     color: rgb(255, 255, 255);
+ }
+
+ .players-container {
+     width: 770px;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ #start-game {
+     align-content: center;
+ }
+
+ #round_score>div {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .players-score {
+     font-weight: 400;
+     font-size: large;
+     padding: 40px;
+
+ }
+
+ #start-game {
+     margin: 30px;
+
+ }
+
+ th {
+     color: aliceblue;
+ }
+
+ td {
+     color: aliceblue;
+ }
+
+ #start-game:hover {
+     background-color: rgb(21, 228, 125);
+     color: white;
+ }

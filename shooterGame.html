@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooter game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <!-- <link rel="stylesheet" href="shootergame.css" type="text/css"> -->
+   <style> body {
+     margin: 0;
+     padding: 0;
+
+
+     color: rgb(255, 255, 255);
+ }
+
+ .container-md {
+     width: 800px;
+     margin: auto;
+     height: 900px;
+     text-align: center;
+
+
+ }
+
+ .title {
+     font-size: xx-large;
+     color: rgb(255, 255, 255);
+ }
+
+ .players-container {
+     width: 770px;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ #start-game {
+     align-content: center;
+ }
+
+ #round_score>div {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .players-score {
+     font-weight: 400;
+     font-size: large;
+     padding: 40px;
+
+ }
+
+ #start-game {
+     margin: 30px;
+
+ }
+
+ th {
+     color: aliceblue;
+ }
+
+ td {
+     color: aliceblue;
+ }
+
+ #start-game:hover {
+     background-color: rgb(21, 228, 125);
+     color: white;
+ }</style>
+</head>
+
+<body class="bg-dark">
+    <div class="container-md ">
+        <p class="title">2 player shooter game</p>
+        <div class="players-container">
+            <div id="container-p1">
+                <div class="players-score" id="player1"></div>
+                <button class="player1-btns btn-lg btn btn-outline-light" id="player1_1">1</button>
+                <button class="player1-btns btn-lg btn btn-outline-light" id="player1_2">2</button>
+                <button class="player1-btns btn-lg btn btn-outline-light" id="player1_3">3</button>
+                <button class="player1-btns btn-lg btn btn-outline-light" id="player1_4">4</button>
+                <button class="player1-btns btn-lg btn btn-outline-light" id="player1_5" value="5">5</button>
+            </div>
+            <div id="container-p2">
+                <div class="players-score"  id="player2"></div>
+                <button id="player2_1" class="btn btn-lg btn-outline-light">1</button>
+                <button id="player2_2" class="btn btn-lg btn-outline-light">2</button>
+                <button id="player2_3" class="btn btn-lg btn-outline-light">3</button>
+                <button id="player2_4" class="btn btn-lg btn-outline-light">4</button>
+                <button id="player2_5" class="btn btn-lg btn-outline-light">5</button>
+            </div>
+        </div>
+        <button id="start-game" class="btn btn-lg btn-outline-light">Start game</button>
+        <div id="round_score">
+        <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Player 1</th>
+                <th scope="col">player 2</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><div id="round_score_1_1"></div></td>
+                <td>
+                    <div id="round_score_2_1"></div>
+                </td>
+
+                
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><div id="round_score_1_2"></div></td>
+                <td>
+                    <div id="round_score_2_2"></div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td ><div id="round_score_1_3"></div></td>
+                <td>
+                    <div id="round_score_2_3"></div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>
+                    <div id="round_score_1_4"></div>
+                </td>
+                <td>
+                    <div id="round_score_2_4"></div>
+                </td>
+            
+            </tr><tr>
+                <th scope="row">5</th>
+                <td>
+                    <div id="round_score_1_5"></div>
+                </td>
+                <td>
+                    <div id="round_score_2_5"></div>
+                </td>
+            
+            </tr>
+        </tbody>
+    </table>
+            
+           
+
+        </div>
+        <div id="game_winner"></div>
+    </div>
+</body>
+<script src="shootergame.js"></script>
+
+</html>
